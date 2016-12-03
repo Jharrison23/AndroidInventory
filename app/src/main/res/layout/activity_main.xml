@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jamesharrison.listadapter.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="View"
+        android:id="@+id/btnView"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/itemQuantity"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Add"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnAdd"
+        android:layout_below="@+id/itemQuantity"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemName"
+        android:hint="Item Name"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemDescription"
+        android:hint="Item Description"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/itemName"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemPrice"
+        android:hint="Item Price"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/itemDescription"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemQuantity"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/itemPrice"
+        android:hint="Item Quantity"/>
+
+
+</RelativeLayout>
