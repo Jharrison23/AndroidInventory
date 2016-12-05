@@ -10,25 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.jamesharrison.listadapter.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="View"
-        android:id="@+id/btnView"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@id/itemQuantity"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Add"
-        android:layout_alignParentStart="true"
-        android:id="@+id/btnAdd"
-        android:layout_below="@+id/itemQuantity"
-        />
 
     <EditText
         android:layout_width="200dp"
@@ -63,6 +44,24 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/itemPrice"
         android:hint="Item Quantity"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="View"
+        android:id="@+id/btnView"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/itemQuantity"
+        />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Add"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnAdd"
+        android:layout_below="@+id/itemQuantity"
+        />
 
 </RelativeLayout>
