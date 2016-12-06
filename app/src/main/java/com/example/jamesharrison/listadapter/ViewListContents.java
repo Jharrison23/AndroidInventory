@@ -54,7 +54,7 @@ public class ViewListContents extends AppCompatActivity
             while(data.moveToNext())
             {
                 // get the elements of the item from the database, name, description, price, quantity
-                item = new Item(data.getString(1), data.getString(2), data.getString(3), data.getString(4));
+                item = new Item(data.getString(1), data.getString(2), data.getDouble(3), data.getInt(4));
 
                 // add the new item to the itemlist array
                 itemList.add(item);

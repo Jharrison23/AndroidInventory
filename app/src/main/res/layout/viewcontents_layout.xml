@@ -4,7 +4,8 @@
     android:layout_height="match_parent">
 
     <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/listView" />
+        android:layout_width="276dp"
+        android:layout_height="397dp"
+        android:id="@+id/listView"
+        />
 </LinearLayout>

@@ -58,12 +58,12 @@ public class FourColumn_ListAdapter extends ArrayAdapter<Item>
 
             if(itemPrice != null)
             {
-                itemPrice.setText(item.getItemPrice());
+                itemPrice.setText(item.getItemPrice().toString());
             }
 
-            if (itemQuantity != null)
+            if (!itemQuantity.equals(null))
             {
-                itemQuantity.setText(item.getItemQuantity());
+                itemQuantity.setText(item.getItemQuantity().toString());
             }
 
         }
