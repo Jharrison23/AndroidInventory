@@ -34,7 +34,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
     public void onCreate(SQLiteDatabase db)
     {
         String createTable = "CREATE TABLE " + TABLE_NAME + " ( ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                " ITEMNAME TEXT, ITEMDESCRIPTION TEXT, ITEMPRICE TEXT, ITEMQUANTITY TEXT) ";
+                " ITEMNAME TEXT, ITEMDESCRIPTION TEXT, ITEMPRICE REAL, ITEMQUANTITY INTEGER) ";
 
         db.execSQL(createTable);
     }
@@ -55,10 +55,14 @@ public class DatabaseHelper extends SQLiteOpenHelper
 
         ContentValues values = new ContentValues();
 
+        Double price = Double.parseDouble(itemPrice);
+
+        Integer quantity = Integer.parseInt(itemQuantity);
+
         values.put(COL2, itemName);
         values.put(COL3, itemDescription);
-        values.put(COL4, itemPrice);
-        values.put(COL5, itemQuantity);
+        values.put(COL4, price);
+        values.put(COL5, quantity);
 
         long result = db.insert(TABLE_NAME, null, values);
 

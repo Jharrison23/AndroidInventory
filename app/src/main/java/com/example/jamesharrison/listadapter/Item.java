@@ -8,11 +8,11 @@ public class Item
 {
     private String ItemName;
     private String ItemDescription;
-    private String ItemPrice;
-    private String ItemQuantity;
+    private Double ItemPrice;
+    private Integer ItemQuantity;
 
 
-    public Item(String itemName, String itemDescription, String itemPrice, String itemQuantity)
+    public Item(String itemName, String itemDescription, Double itemPrice, Integer itemQuantity)
     {
         ItemName = itemName;
 
@@ -34,12 +34,12 @@ public class Item
         return ItemDescription;
     }
 
-    public String getItemPrice()
+    public Double getItemPrice()
     {
         return ItemPrice;
     }
 
-    public String getItemQuantity()
+    public Integer getItemQuantity()
     {
         return ItemQuantity;
     }
